@@ -21,6 +21,6 @@ pub fn warn(message: impl Into<String>) {
 }
 
 pub fn question(message: impl Into<String>) {
-    print!("[{}] {} >", "?".purple(), message.into());
+    print!("[{}] {} > ", "?".purple(), message.into());
     stdout().flush().unwrap();
 }
